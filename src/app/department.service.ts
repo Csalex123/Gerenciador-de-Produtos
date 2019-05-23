@@ -25,4 +25,8 @@ export class DepartmentService {
     console.log(this.departamentos);
   }
 
+  getDepartamentosById(id:number): Departamento{
+    return this.departamentos.find((d) => d.id == id);
+  }
+
 }

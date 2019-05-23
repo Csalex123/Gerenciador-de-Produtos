@@ -1,7 +1,7 @@
 import { Departamento } from './Departamento.module';
 
 export interface Produto{
-    id:number;
+    id?:number;
     name:string;
     preco:number;
     descricao:string;
