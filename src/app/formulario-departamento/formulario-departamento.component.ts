@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioDepartamentoComponent implements OnInit {
 
+  //Atributos
+
+  depName: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  salvar(){
+
+  }
+
+  limpar(){
+    
   }
 
 }

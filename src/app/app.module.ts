@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { FlexLayoutModule} from '@angular/flex-layout';
 import { FormularioProdutoComponent } from './formulario-produto/formulario-produto.component';
 import { FormularioDepartamentoComponent } from './formulario-departamento/formulario-departamento.component';
 import { TabelaProdutosComponent } from './tabela-produtos/tabela-produtos.component';
@@ -22,7 +21,6 @@ import { TabelaProdutosComponent } from './tabela-produtos/tabela-produtos.compo
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
