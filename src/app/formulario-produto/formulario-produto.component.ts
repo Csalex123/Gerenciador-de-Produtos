@@ -26,6 +26,7 @@ export class FormularioProdutoComponent implements OnInit {
 
   ngOnInit() {
     this.departamentos = this.servicosDerpartamento.getDepartamentos();
+
   }
 
   
@@ -36,6 +37,7 @@ export class FormularioProdutoComponent implements OnInit {
       descricao: this.descricao,
       departamento: this.departamento
     });
+    this.limpar();
   }
 
   limpar(){
