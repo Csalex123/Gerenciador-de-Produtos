@@ -22,7 +22,7 @@ export class DepartmentService {
 
   adicionarDepartamentos(d: Departamento){
     this.departamentos.push({...d, id: this.nextID ++}); //Fazendo uma junção.
-    console.log(this.departamentos);
+    //console.log(this.departamentos);
   }
 
   getDepartamentosById(id:number): Departamento{
