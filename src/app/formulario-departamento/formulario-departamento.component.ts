@@ -1,4 +1,6 @@
+import { DepartmentService } from './../department.service';
 import { Component, OnInit } from '@angular/core';
+import { DepartmentService } from '../department.service';
 
 @Component({
   selector: 'app-formulario-departamento',
@@ -11,17 +13,20 @@ export class FormularioDepartamentoComponent implements OnInit {
 
   depName: string;
 
-  constructor() { }
+  constructor(private servicosDepartamento: DepartmentService) { 
+
+  }
 
   ngOnInit() {
   }
 
   salvar(){
-
+    this.servicosDepartamento.adicionarDepartamentos({ name: this.depName });
+    this.limpar();
   }
 
   limpar(){
-    
+    this.depName = "";
   }
 
 }
